@@ -94,7 +94,7 @@ def Settings( filename, **kwargs):
             flags += ['-std=c++20', '-x', 'c++']
         # C
         elif (ext in ['.c', '.h']) :
-            flags += ['-c99', '-x', 'c']
+            flags += ['-x', 'c']
         elif (ext in ['.cu', '.cuh']) :
             flags += ['-x', 'cuda', '-std=c++20']
         # relative_to = DirectoryOfThisScript()

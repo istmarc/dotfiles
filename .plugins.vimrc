@@ -16,6 +16,8 @@ Plugin 'vim-airline/vim-airline'
 
 Plugin 'vim-airline/vim-airline-themes'
 
+Plugin 'vala.vim'
+
 " YCM
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_complete_in_comments=1
@@ -33,6 +35,10 @@ set statusline+=%*gbar
 
 " Latex
 let g:tex_flavor = 'latex'
+
+if exists('g:loaded_vala_vim')
+    finish
+endif
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
