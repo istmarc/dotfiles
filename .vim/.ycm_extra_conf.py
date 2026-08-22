@@ -27,8 +27,8 @@ FLAGS = [
     # '-I', '/usr/include/google/',
     # OPenCV 
     #'-I', '/usr/local/include/opencv4/'
-    # Tenseur
-    '-I', '/home/marc/repos/tenseur',
+    # Ten library
+    '-I', '/home/marc/repos/ten',
 ]
 
 def getFLAGS():

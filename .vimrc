@@ -72,7 +72,7 @@ map <S-Down> <C-F>
 map <S-Up> <C-B>
 
 " Pyhton
-autocmd FileType python setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
 
 " C++
 autocmd BufNewFile,BufRead *.C set syntax=cpp
@@ -83,19 +83,25 @@ autocmd BufNewFile,BufRead *.ixx set syntax=cpp
 autocmd BufNewFile,BufRead *.icc set syntax=cpp
 autocmd BufNewFile,BufRead *.hxx set syntax=cpp
 autocmd BufNewFile,BufRead *.hpp set syntax=cpp
-autocmd FileType cpp setlocal expandtab shiftwidth=3 softtabstop=3
+autocmd FileType cpp setlocal expandtab shiftwidth=2 softtabstop=2
 
 " D
-autocmd FileType d setlocal expandtab shiftwidth=3 softtabstop=3
+autocmd FileType d setlocal expandtab shiftwidth=2 softtabstop=2
+
+" Carbon
+autocmd FileType carbon setlocal expandtab shiftwidth=2 softtabstop=2
+
+" Lua
+autocmd FileType lua setlocal expandtab shiftwidth=2 softtabstop=2
 
 " Cuda
 autocmd BufNewFile,BufRead *.cu set syntax=cuda ft=cuda
 autocmd BufNewFile,BufRead *.cuh set syntax=cuda ft=cuda
-autocmd FileType cuda setlocal expandtab shiftwidth=3 softtabstop=3
+autocmd FileType cuda setlocal expandtab shiftwidth=2 softtabstop=2
 
 " Julia
 autocmd BufNewFile,BufRead *.jl set syntax=julia
-autocmd FileType julia setlocal expandtab shiftwidth=3 softtabstop=3
+autocmd FileType julia setlocal expandtab shiftwidth=2 softtabstop=2
 
 " LaTeX cls files
 autocmd BufNewFile,BufRead *.cls set syntax=tex
