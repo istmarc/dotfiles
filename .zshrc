@@ -107,4 +107,20 @@ source $ZSH/oh-my-zsh.sh
 python_activate () {
 	source $HOME/.venv/default/bin/activate
 }
+# Python libs
+export PYTHONPATH=/usr/local/lib
 
+# DPI
+export QT_FONT_DPI=130
+
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+path=('/home/marc/.juliaup/bin' $path)
+export PATH
+# Tab completion for juliaup and julia channel selection
+[ -f "/home/marc/.julia/juliaup/completions/zsh.zsh" ] && source "/home/marc/.julia/juliaup/completions/zsh.zsh"
+
+# <<< juliaup initialize <<<
